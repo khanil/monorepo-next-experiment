@@ -1,0 +1,23 @@
+{
+  "name": "@lerna-next/ui-kit",
+  "version": "0.0.1",
+  "description": "UI Kit",
+  "keywords": [
+    "react"
+  ],
+  "author": "Vyacheslav Khanilo <khaniloslava@yandex.ru>",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib"
+  },
+  "main": "lib/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^16.8.6"
+  }
+}

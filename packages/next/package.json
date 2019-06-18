@@ -1,0 +1,40 @@
+{
+  "name": "@lerna-next/next",
+  "version": "0.0.1",
+  "description": "Next.js app",
+  "keywords": [
+    "next.js",
+    "react"
+  ],
+  "author": "Vyacheslav Khanilo <khaniloslava@yandex.ru>",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "ts-node --project server/tsconfig.json server/server.ts",
+    "analyze": "BUNDLE_ANALYZE=both npm run build",
+    "export": "npm run build && next export",
+    "start": "NODE_ENV=production ts-node --project server/tsconfig.json server/server.ts",
+    "serve-static": "npm run export && http-server ./build -p $PORT",
+    "build": "next build ./src",
+    "now-build": "SERVERLESS=true next build"
+  },
+  "dependencies": {
+    "@lerna-next/ui-kit": "0.0.1",
+    "express": "^4.17.1",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/next": "^8.0.5",
+    "@zeit/next-bundle-analyzer": "^0.1.2",
+    "@zeit/next-typescript": "^1.1.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-plugin-custom-babel-config": "^1.0.2",
+    "next-transpile-modules": "^2.3.1",
+    "ts-node": "^8.3.0"
+  }
+}
