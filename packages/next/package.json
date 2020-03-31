@@ -23,7 +23,7 @@
   "dependencies": {
     "@lerna-next/ui-kit": "0.0.1",
     "express": "^4.17.1",
-    "next": "^8.1.0",
+    "next": "^9.3.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
